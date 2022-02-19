@@ -42,7 +42,7 @@ to deploy backend in python or in java. Both are deployed via SAM.
     aws cloudformation create-stack --stack-name serverless-web-application-java-backend-pipeline --template-body file://java-app-backend/serverless-pipeline.yaml --capabilities CAPABILITY_AUTO_EXPAND CAPABILITY_IAM --region eu-west-1
 ```
 
-- Trigger Code build for deploying java backend resources via pipeline. It will use SAM to deploy serverless backend stack.
+- Trigger Code build for deploying java backend resources via pipeline. It will use SAM to deploy serverless backend stack. 🛑 Note: You must create CodeBuild with AWS console
 
 ```
     aws codebuild start-build --project-name WebAppJavaBackendPipelineDetector --region eu-west-1
